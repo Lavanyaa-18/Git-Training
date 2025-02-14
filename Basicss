@@ -1,0 +1,1353 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "ff307956-9b27-4f8a-85f3-741e6bda63f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Hello\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "5764c580-4bbb-4b74-a7f1-80eddd040eed",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#commenttt"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "5427c04a-8855-4fb9-aa05-27de2ef67d72",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "number1: 10\n",
+      "number2:22\n",
+      "name: MINDSPRINT\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1=10\n",
+    "num2=22\n",
+    "name=\"MINDSPRINT\"\n",
+    "print(\"number1:\",num1)\n",
+    "print(f\"number2:{num2}\")\n",
+    "print(\"name:\",name)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "3a0538f6-4b6a-4cd2-8670-b619cfc4edbe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "apple orange mango\n"
+     ]
+    }
+   ],
+   "source": [
+    "x,y,z=\"apple\",\"orange\",\"mango\"\n",
+    "print(x,y,z)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "730296e0-913c-4f6a-8427-54d204081bc0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter num1: 8\n",
+      "enter num2: 6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "addition= 14\n",
+      "subtraction= 2\n",
+      "Multiplication: 48\n",
+      "Divisionn: 1\n",
+      "Exponential: 262144\n",
+      "FloorDivisionn: 1\n",
+      "Is num1 equal to num2: False\n",
+      "Is num1 not equal to num2: True\n",
+      "Is num1 greater than num2: True\n",
+      "Is num1 equal to num2: False\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1=int(input(\"enter num1:\"))\n",
+    "num2=int(input(\"enter num2:\"))\n",
+    "add=int(num1+num2)\n",
+    "print(\"addition=\",add)\n",
+    "sub=int(num1-num2)\n",
+    "print(\"subtraction=\",sub)\n",
+    "Mul=int(num1*num2)\n",
+    "print(\"Multiplication:\",Mul)\n",
+    "Div=int(num1/num2)\n",
+    "print(\"Divisionn:\",Div)\n",
+    "exp=int(num1**num2)\n",
+    "print(\"Exponential:\",exp)\n",
+    "FloorDiv=int(num1//num2)\n",
+    "print(\"FloorDivisionn:\",FloorDiv)\n",
+    "print(\"Is num1 equal to num2:\",num1==num2)\n",
+    "print(\"Is num1 not equal to num2:\",num1!=num2)\n",
+    "print(\"Is num1 greater than num2:\",num1>num2)\n",
+    "print(\"Is num1 equal to num2:\",num1==num2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "5fbce890-f2c3-4cbf-bba0-499ab26b4f06",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "post increment: 7\n",
+      "post decrement: 4\n",
+      "multi: 24\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=5\n",
+    "num+=2\n",
+    "print(\"post increment:\",num)\n",
+    "num2=7\n",
+    "num2-=3\n",
+    "print(\"post decrement:\",num2)\n",
+    "num3=6\n",
+    "num3*=4\n",
+    "print(\"multi:\",num3)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "52392aca-a5b7-448b-b26e-429d060dcd41",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter your email: admin@gmail.com\n",
+      "enter your pwd: admin@123\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "email=input(\"enter your email:\")\n",
+    "pwd=input(\"enter your pwd:\")\n",
+    "print(email=='admin@gmail.com' and pwd=='admin@123')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "1ac8e3e0-cfe0-44e8-80ff-442a649b5565",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "number is positive\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=6\n",
+    "if num>0:\n",
+    "    print(\"number is positive\")\n",
+    "elif num<0:\n",
+    "    print(\"negative\")\n",
+    "else:\n",
+    "    print(\"the number is zero\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "809dc7db-80bc-46f6-8eb6-adef043cf3ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Positive\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=4\n",
+    "result=\"Positive\" if num>0 else \"Negative\" ###TERNARY\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "f35ed70f-3c9d-4d3b-9400-5972c963913e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "even\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=6\n",
+    "if num>0:\n",
+    "    if num%2==0: \n",
+    "        print(\"even\") \n",
+    "    else: print(\"odd\")\n",
+    "else: print(\"negative\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "5cf32a59-75a0-4e68-852a-bf932ca551e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter your marks: 111\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Incorrect number\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input(\"enter your marks:\"))\n",
+    "if num>=90 and num<=100:\n",
+    "    print(\"Grade A\")\n",
+    "elif num>=70 and num<=89:\n",
+    "    print(\"Grade B\")\n",
+    "elif num>=50 and num<=69:\n",
+    "    print(\"grade C\")\n",
+    "elif num<0 and num<=49:\n",
+    "    print(\"Sorry you failed\")\n",
+    "    \n",
+    "else:\n",
+    "    print(\"Incorrect number\")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "020b5457-6230-4e52-85a4-9bcbc312b108",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter your marks: -99\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-99 is less than -10\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input(\"enter your marks:\"))\n",
+    "if num>0:\n",
+    "    if num%2==0: \n",
+    "        print(\"positive even\") \n",
+    "    else: \n",
+    "        print(\"positive odd\")\n",
+    "elif num==0:\n",
+    "    print(\"Zero\")\n",
+    "elif num<0:\n",
+    "    if num<-10:\n",
+    "        print(num, \"is less than -10\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "40f6006d-8d9a-4bbd-b7e8-8a49765f9c39",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the Purchased Amount 900\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Discounted amount: 180.0\n",
+      "Final amount: 720.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "amount=int(input(\"Enter the Purchased Amount\"))\n",
+    "if amount>500:\n",
+    "    print(\"Discounted amount:\",(amount*20/100))\n",
+    "    print(\"Final amount:\",amount-(amount*20/100))\n",
+    "elif amount>=200 and amount<=500:\n",
+    "    print(\"Discounted amount:\",(amount*10/100))\n",
+    "elif amount<=200 and amount>=0:\n",
+    "    print(\" No Discount\")\n",
+    "else:\n",
+    "    print(\"enter the correct amount\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "e2ef22a2-0501-4e27-92c6-e8912d3b6882",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the Purchased Amount 899\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Discount given: 20 %\n",
+      "You saved: 179.8\n",
+      "Final Amount: 719.2\n"
+     ]
+    }
+   ],
+   "source": [
+    "amount=int(input(\"Enter the Purchased Amount\"))\n",
+    "discount=0\n",
+    "if amount>=500:\n",
+    "    discount=20\n",
+    "elif 200>= amount <500:\n",
+    "    discount=10\n",
+    "discount_price=amount*discount/100\n",
+    "final_price=amount-discount_price\n",
+    "\n",
+    "print(\"Discount given:\",discount,\"%\")\n",
+    "print(\"You saved:\",discount_price)\n",
+    "print(\"Final Amount:\",final_price)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "9a6ab6fe-743a-4903-8cbd-b0ea6882e307",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "count=1\n",
+    "while count<=10:\n",
+    "    print(count)\n",
+    "    count+=1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "32bacff7-5c19-4630-b5c5-9b2c4a850f03",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(0,11):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "id": "478864c9-a0e2-4e22-bdcc-6a5908bba274",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "count=0\n",
+    "while count<10:\n",
+    "    if count==4:\n",
+    "        break\n",
+    "    print(count)\n",
+    "    count+=1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 80,
+   "id": "b2331e55-a007-41cf-9e91-53aeb8bdd520",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1,11):\n",
+    "    if i==3:\n",
+    "        continue\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 114,
+   "id": "41dca6c5-46b2-4d84-8af8-44595d700d83",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter number1: 90\n",
+      "Enter number2: 89\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1=int(input(\"Enter number1:\"))\n",
+    "num2=int(input(\"Enter number2:\"))\n",
+    "sum1=0\n",
+    "for i in range(num1,num2+1):\n",
+    "    if i%2==0:\n",
+    "        sum1+=i\n",
+    "print(sum1)\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "id": "b8d56e37-f98e-4bfb-97fe-0cd366f197d0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 \n",
+      "1 2 \n",
+      "1 2 3 \n",
+      "1 2 3 4 \n",
+      "1 2 3 4 5 \n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1,6):\n",
+    "    for j in range(1,i+1):\n",
+    "        print(j,end=\" \")\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "b241d8e3-a187-42b7-a403-cceacc07c154",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome\n"
+     ]
+    }
+   ],
+   "source": [
+    "def hello():\n",
+    "    print(\"Welcome\")\n",
+    "hello()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "id": "9daa068a-687b-4b53-b0a0-992ba870825c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good afternoon Nidhi\n"
+     ]
+    }
+   ],
+   "source": [
+    "def greet(name):\n",
+    "    print(\"Good afternoon\",name)\n",
+    "greet(\"Nidhi\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "id": "7e9f60bb-7df4-48a9-85ec-2524ed267254",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "addition: 6\n"
+     ]
+    }
+   ],
+   "source": [
+    "def add(n1,n2):\n",
+    "    result=n1+n2\n",
+    "    print(\"addition:\",result)\n",
+    "add(2,4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "id": "8e2d9287-86ae-42a9-a088-de12e4c98c95",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#with return value\n",
+    "def mul(a,b):\n",
+    "    return a*b\n",
+    "res=mul(2,5)\n",
+    "print(res)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 93,
+   "id": "ddc82b5a-4afa-4807-b6fe-d9ea66a17894",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Nidhi is 21 years old and lives in Mysuru\n"
+     ]
+    }
+   ],
+   "source": [
+    "def person(name,age,city):\n",
+    "    print(f\" {name} is {age} years old and lives in {city}\")\n",
+    "person(\"Nidhi\",21,\"Mysuru\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "id": "56969667-1707-44d7-bfb5-0400dac3d2a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "720\n"
+     ]
+    }
+   ],
+   "source": [
+    "def factorial(n):\n",
+    "    if n==1:\n",
+    "        return 1\n",
+    "    else:\n",
+    "        return n*factorial(n-1)\n",
+    "result=factorial(6)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "id": "6011a0f0-5c91-4d05-93ab-90f126dab3a9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the username admin@1\n",
+      "enter the pwd admin\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Login successful\n"
+     ]
+    }
+   ],
+   "source": [
+    "def login_credentials(username,pwd):\n",
+    "    if username=='admin@1' and pwd=='admin':\n",
+    "        print(\"Login successful\")\n",
+    "    else:\n",
+    "        print(\"Invalid credentials\")\n",
+    "username=input(\"enter the username\")\n",
+    "pwd=input(\"enter the pwd\")\n",
+    "login_credentials(username,pwd)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "id": "f03e12ca-1261-4f9c-b7c8-369d2a32b63b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 20, 30, 40, 50]\n",
+      "40\n",
+      "[10, 20, 30, 40, 50, 60]\n",
+      "[10, 20, 22, 30, 40, 50, 60]\n",
+      "60\n",
+      "6\n",
+      "10\n",
+      "50\n",
+      "[10, 22, 30, 40, 50]\n",
+      "False\n",
+      "[22, 30, 40]\n"
+     ]
+    }
+   ],
+   "source": [
+    "mylist=[10,20,30,40,50]\n",
+    "print(mylist)\n",
+    "print(mylist[3])\n",
+    "mylist.append(60)\n",
+    "print(mylist)\n",
+    "mylist.insert(2,22)\n",
+    "print(mylist)\n",
+    "print(mylist.pop())\n",
+    "print(len(mylist))\n",
+    "print(min(mylist))\n",
+    "print(max(mylist))\n",
+    "mylist.remove(20)\n",
+    "print(mylist)\n",
+    "print(20 in mylist)\n",
+    "print(mylist[1:4])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "id": "e6e677a8-9f1f-4642-9e5e-d9945186331a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 22, 30, 40, 50, 1, 2, 3, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "mylist.extend([1,2,3,4])\n",
+    "print(mylist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "id": "7989e7ac-a784-42c2-93d1-f7d780c4ec06",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 22, 30, 40, 35, 1, 2, 3, 4]\n",
+      "[22, 30, 40, 35, 1, 2, 3, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "mylist[4]=35\n",
+    "print(mylist)\n",
+    "mylist.pop(0)\n",
+    "print(mylist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 124,
+   "id": "eaa6551b-ced2-47d1-ba3c-4b0b1658b06f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "mydata=[1,2,3,4,5,6,7]\n",
+    "for num in mydata:\n",
+    "    print(num)\n",
+    "i=0\n",
+    "while i<len(mydata):\n",
+    "    print(mydata[i])\n",
+    "    i+=1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "id": "0dc53dcf-5c51-4847-b4a7-4590b5110080",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[7, 6, 5, 4, 3, 2, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "mydata.sort(reverse=True)\n",
+    "print(mydata)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 126,
+   "id": "e7e920e4-72e1-468a-a1dd-813ebc5173ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 4, 9, 16, 25]\n"
+     ]
+    }
+   ],
+   "source": [
+    "squares=[x**2 for x in range(1,6)]\n",
+    "print(squares)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 128,
+   "id": "e3f052b1-b9d3-4004-a7d2-e7b5ef29f171",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers=[1,2,3,4]\n",
+    "copy_numbers=numbers.copy()\n",
+    "print(copy_numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 136,
+   "id": "9c42589d-eecb-4554-a303-a3c60d7d1ff0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "('Apple', 'Mango', 'Banana', [1, 2])\n",
+      "('hello',)\n",
+      "()\n",
+      "Mango\n",
+      "Banana\n"
+     ]
+    }
+   ],
+   "source": [
+    "## creating tuple for creating single element in a tuple , is required after that\n",
+    "fruits=('Apple','Mango','Banana',[1,2])\n",
+    "print(fruits)\n",
+    "#creating single element in a tuple , is required after that\n",
+    "table=('hello',)\n",
+    "print(table)\n",
+    "#creating empty tuple\n",
+    "empty=()\n",
+    "print(empty)\n",
+    "print(fruits[1])\n",
+    "print(fruits[-2])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "382ca473-9e53-4b5a-a590-dc14717d095d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(10, 20, 30, 40, 50)\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = (10, 20, 30, 40)\n",
+    "numbers_list = list(numbers)  # Convert tuple to list\n",
+    "numbers_list.append(50)       # Append 50 to the list\n",
+    "numbers = tuple(numbers_list) # Convert list back to tuple\n",
+    "print(numbers)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "721e99e2-46e3-4649-b1ff-655689868453",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "eid : 100\n",
+      "name : Nidhijjiii\n",
+      "department : ISE\n"
+     ]
+    }
+   ],
+   "source": [
+    "employee={\n",
+    "    \"eid\":100,\n",
+    "    \"name\":\"Nidhijjiii\",\n",
+    "    \"department\":\"ISE\"}\n",
+    "employee\n",
+    "for key in employee:\n",
+    "    print(key,\":\",employee[key])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "10bacfe7-537f-4ed1-b6b2-f0ba924ba4f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "for key in employee:\n",
+    "    print(key,\":\",employee[key])\n",
+    "    print(employee.get('manager'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "d3aa1a52-8b22-4b31-8135-a8cd49826d3a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Manager: Nidhi\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Manager:\" ,employee.get('manager','Nidhi'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "a50edc82-1d0b-430d-b4b0-984f83cfb850",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "department is present\n",
+      "department is present\n",
+      "department is present\n"
+     ]
+    }
+   ],
+   "source": [
+    "for department in employee:\n",
+    "    print(\"department is present\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "1e9e7369-131c-402f-89d2-d6177b9b52dc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{403, 404, 500, 200, 302}\n"
+     ]
+    }
+   ],
+   "source": [
+    "##SET-> no duplicates allowed and no order maintained\n",
+    "\n",
+    "myset={404,200,500,302,403}\n",
+    "print(myset)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "8111a945-602b-400d-a7da-10724d5d031d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "402\n",
+      "403\n",
+      "404\n",
+      "500\n",
+      "501\n",
+      "200\n",
+      "302\n",
+      "303\n"
+     ]
+    }
+   ],
+   "source": [
+    "for num in myset:\n",
+    "    print(num)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "da2c1a9e-29da-4116-a9b9-956fda3005a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{402, 403, 404, 500, 501, 200, 302, 303}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Direct Access\n",
+    "myset.add(501)\n",
+    "print(myset)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "56f3ab1a-dd49-4237-8946-5d085d9e2d43",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{402, 403, 404, 500, 501, 200, 302, 303}\n"
+     ]
+    }
+   ],
+   "source": [
+    "myset.update([303,402])\n",
+    "print(myset)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "3c9576fe-c1bb-4214-800a-525ee15ac750",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{402, 403, 404, 500, 501, 200, 302, 303}\n"
+     ]
+    }
+   ],
+   "source": [
+    "myset.discard(670)#if not found then no error  but in remove we get error if the element is not present\n",
+    "print(myset)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "14c54c25-6309-48aa-92e1-c03231d7a7e5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{403, 404, 500, 501, 200, 302, 303}\n"
+     ]
+    }
+   ],
+   "source": [
+    "myset.pop()\n",
+    "print(myset)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "ebe064b9-1d70-4fb1-b86a-6e0afeba3b8a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5, 6, 7, 8}\n",
+      "{1, 2, 3, 4, 5, 6, 7, 8}\n"
+     ]
+    }
+   ],
+   "source": [
+    "A={1,2,3,4,5}\n",
+    "B={4,5,6,7,8}\n",
+    "#Union\n",
+    "print(A|B)\n",
+    "print(A.union(B))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "8ac25a31-3909-403b-9800-1b6ad607c266",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{4, 5}\n",
+      "{4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Intersection\n",
+    "print(A&B)\n",
+    "print(A.intersection(B))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "0dac1ef3-bf5d-4962-813c-7569082cd3fa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3}\n",
+      "{1, 2, 3}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(A-B)\n",
+    "print(A.difference(B))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "e46d5aec-3074-42bb-870f-70593ecb7244",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 6, 7, 8}\n",
+      "{1, 2, 3, 6, 7, 8}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(A^B)\n",
+    "print(A.symmetric_difference(B))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "aeff09b4-faf9-47c5-a06c-285d1652273b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Initial employees and salaries:\n",
+      "Current employees and salaries:\n",
+      "em1: nisha - 70000\n",
+      "em2: Brony - 80000\n",
+      "em3: Charlie - 75000\n",
+      "Employee \"David\" with salary 85000 added.\n",
+      "Employee \"Brony\" salary updated to 90000.\n",
+      "Employee \"Charlie\" removed.\n",
+      "Updated employees and salaries:\n",
+      "Current employees and salaries:\n",
+      "em1: nisha - 70000\n",
+      "em2: Brony - 90000\n",
+      "em4: David - 85000\n"
+     ]
+    }
+   ],
+   "source": [
+    "employees = {\n",
+    "    \"em1\": {\"name\": \"nisha\", \"salary\": 70000},\n",
+    "    \"em2\": {\"name\": \"Brony\", \"salary\": 80000},\n",
+    "    \"em3\": {\"name\": \"Charlie\", \"salary\": 75000}\n",
+    "}\n",
+    " \n",
+    "def add_employee(emp_id, name, salary):\n",
+    "    employees[emp_id] = {\"name\": name, \"salary\": salary}\n",
+    "    print(f'Employee \"{name}\" with salary {salary} added.')\n",
+    " \n",
+    " \n",
+    "def update_employee(emp_id, new_salary):\n",
+    "    if emp_id in employees:\n",
+    "        employees[emp_id][\"salary\"] = new_salary\n",
+    "        print(f'Employee \"{employees[emp_id][\"name\"]}\" salary updated to {new_salary}.')\n",
+    "    else:\n",
+    "        print(f'Employee with ID \"{emp_id}\" not found.')\n",
+    " \n",
+    "def remove_employee(emp_id):\n",
+    "    if emp_id in employees:\n",
+    "        removed_employee = employees.pop(emp_id)\n",
+    "        print(f'Employee \"{removed_employee[\"name\"]}\" removed.')\n",
+    "    else:\n",
+    "        print(f'Employee with ID \"{emp_id}\" not found...')\n",
+    " \n",
+    "def print_all_employees():\n",
+    "    print(\"Current employees and salaries:\")\n",
+    "    for emp_id, details in employees.items():\n",
+    "        print(f'{emp_id}: {details[\"name\"]} - {details[\"salary\"]}')\n",
+    " \n",
+    " \n",
+    "print(\"Initial employees and salaries:\")\n",
+    "print_all_employees()\n",
+    "add_employee(\"em4\", \"David\", 85000)\n",
+    "update_employee(\"em2\", 90000)\n",
+    "remove_employee(\"em3\")\n",
+    " \n",
+    "print(\"Updated employees and salaries:\")\n",
+    "print_all_employees()\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d3531b4e-0453-40bc-bc28-a8c26af53922",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
