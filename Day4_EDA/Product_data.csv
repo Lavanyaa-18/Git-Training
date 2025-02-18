@@ -1,0 +1,21 @@
+Order_id,Product,Category,Quantity,Price,Total_Amount,Date
+1001,LG A160,LG,4,6379,0,1/26/2025
+1002,alcatel OT-C651,alcatel,2,6816,0,8/11/2024
+1003,Oppo Reno3,Oppo,4,10355,0,6/3/2024
+1004,Xiaomi Mi Play,Xiaomi,2,10778,0,2/18/2024
+1005,BenQ-Siemens SL91,BenQ-Siemens,1,5472,0,8/2/2024
+1006,alcatel OT 556,alcatel,1,3780,0,9/17/2024
+1007,alcatel OT 531,alcatel,1,7276,0,6/6/2024
+1008,Oppo K1,Oppo,5,11002,0,3/25/2024
+1009,Sagem MC 940,Sagem,5,10429,0,1/16/2025
+1010,Siemens CFX65,Siemens,1,3820,0,9/1/2024
+1011,HTC Nexus 9,HTC,2,9099,0,3/1/2024
+1012,Philips W920,Philips,2,4604,0,3/3/2024
+1013,HTC TyTN II,HTC,5,5287,0,5/17/2024
+1014,XOLO Play Tegra Note,XOLO,2,5062,0,2/19/2024
+1015,Plum Capacity,Plum,4,3050,0,4/16/2024
+1016,Sony Ericsson W980,Sony,5,6385,0,8/27/2024
+1017,XOLO Era 1X,XOLO,3,8745,0,2/5/2025
+1018,Huawei nova plus,Huawei,5,9795,0,4/27/2024
+1019,Siemens S10,Siemens,4,3519,0,1/8/2025
+1020,LG KP265,LG,5,5012,0,12/17/2024

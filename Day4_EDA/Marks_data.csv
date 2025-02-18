@@ -1,0 +1,101 @@
+Student_id,Name,Match,Science,English,Total,Grade
+1,Marlow Proudler,56,96,76,40,tangible
+2,Kinny Heads,79,20,30,14,Right-sized
+3,Shandie Waterstone,0,96,72,49,tangible
+4,Kippie Bouchier,95,2,40,2,methodology
+5,Rhodie Dosdell,98,62,59,64,system-worthy
+6,Bree Barney,30,18,72,42,Centralized
+7,Clementine Annies,24,74,47,58,matrices
+8,Ebenezer Prentice,53,66,6,82,Proactive
+9,Ginnie O'Keenan,47,61,42,65,modular
+10,Bartram Addlestone,53,94,7,68,Re-contextualized
+11,Adrian Constantine,8,27,64,34,uniform
+12,Corby Iacomelli,95,34,24,88,portal
+13,Kellyann Vondrys,69,99,59,46,instruction set
+14,Bram Oakland,68,11,78,6,Mandatory
+15,Jehanna Esterbrook,80,8,94,51,alliance
+16,Ida Piscotti,92,64,46,78,Customer-focused
+17,Mill Drees,41,41,58,68,actuating
+18,Nevil Cheel,62,73,47,61,ability
+19,Stormy Kerrey,93,77,45,73,Team-oriented
+20,Thomas Titcumb,8,19,10,45,Innovative
+21,Lynea Broomer,67,47,30,86,content-based
+22,Germayne Hendrikse,49,42,2,62,Switchable
+23,Elna Taye,82,8,64,22,productivity
+24,Suki Kinane,37,66,19,91,interactive
+25,Ardelia Shales,65,100,99,24,maximized
+26,Cara Nutman,68,41,46,39,model
+27,Germana Plowright,64,55,96,70,secondary
+28,Glad Hoys,88,6,50,71,disintermediate
+29,Evonne Waterland,19,42,1,24,product
+30,Lizzy Newark,2,60,23,21,capability
+31,Drew Winslett,0,70,46,3,Organic
+32,Oralle Debill,79,93,59,20,Reverse-engineered
+33,Sax Aitken,74,90,65,4,Enterprise-wide
+34,Antonin Geaney,56,17,54,19,tangible
+35,Vivianne Frewer,98,37,19,95,reciprocal
+36,Maggee Lamport,84,19,6,21,Adaptive
+37,Adiana Golightly,44,49,7,89,approach
+38,Demetra Jimenez,0,16,90,51,customer loyalty
+39,Dottie Pardie,10,75,88,97,even-keeled
+40,Cletus Abbotson,76,100,74,17,non-volatile
+41,Shermy Sothern,67,60,8,36,empowering
+42,Chandra Sumbler,90,76,25,82,stable
+43,Rafaello Petegre,2,46,9,24,installation
+44,Egbert Ellerton,46,59,98,54,hybrid
+45,Christi Walder,7,1,56,50,extranet
+46,Chen Wraxall,21,75,9,20,Reverse-engineered
+47,Erminie Verrills,95,76,15,17,5th generation
+48,Elsinore Arnely,6,74,63,54,full-range
+49,Ches Croucher,29,46,43,96,Re-engineered
+50,Amberly Torrejon,3,23,64,12,heuristic
+51,Giulia Kennedy,12,90,24,29,dynamic
+52,Jacquie Bradfield,54,63,57,18,bottom-line
+53,Maura Skrine,51,3,92,95,multi-state
+54,Aretha Charters,98,36,98,26,6th generation
+55,Jarrett Edleston,91,81,62,27,toolset
+56,Goldy Somerset,44,30,25,38,eco-centric
+57,Orlando MacDowall,60,89,13,7,User-friendly
+58,Bartram Lezemore,14,11,12,43,Synchronised
+59,Marlow Bilton,22,70,75,14,flexibility
+60,Georgeanna Pawnsford,37,22,65,3,forecast
+61,Lyndell Ryde,23,93,26,26,Re-engineered
+62,Lana Shawcross,66,88,56,78,Customizable
+63,Emmy Cyples,27,18,83,4,Front-line
+64,Melita O'Hallihane,85,62,69,13,matrix
+65,Peggie Greenlies,65,15,52,89,Diverse
+66,Frans Landreth,58,70,12,29,Reactive
+67,Farley Izhaky,35,40,0,94,superstructure
+68,Bernetta Minett,18,24,94,13,algorithm
+69,Windy Scurrell,81,98,23,47,Innovative
+70,Frederic Jerche,94,24,74,35,Optimized
+71,Mortie Cutress,98,33,61,62,functionalities
+72,Obidiah Ygou,79,59,35,37,User-friendly
+73,Lilith Handforth,83,65,52,4,Mandatory
+74,Lurline Rudham,15,87,90,99,customer loyalty
+75,Jayne Eddicott,18,27,0,13,optimizing
+76,Adriane Salterne,79,73,23,57,Object-based
+77,Joann Iorillo,83,97,42,28,hybrid
+78,Wendeline Covely,6,64,26,42,dynamic
+79,Sol Varga,90,7,28,68,optimizing
+80,Ddene Henriquet,90,86,81,73,Configurable
+81,Dillon Naseby,97,5,43,43,Seamless
+82,Arleta Azemar,23,73,12,52,Business-focused
+83,Shelbi Kingsnod,83,42,41,59,Integrated
+84,Amie Corton,72,36,77,50,zero administration
+85,Vilma Nuss,56,20,95,2,access
+86,Rollin Bellew,27,70,96,66,synergy
+87,Tisha Morby,70,72,57,26,capacity
+88,Newton Crake,100,46,92,83,Digitized
+89,Kearney Whitby,31,6,99,55,model
+90,Clark Vasyagin,17,49,87,67,circuit
+91,Warden Hayter,65,87,75,50,interface
+92,Dionisio Persse,90,26,0,34,leading edge
+93,Sigismund Assante,26,88,60,3,multi-state
+94,Johannes Klaassens,13,64,92,36,bi-directional
+95,Shay Cavendish,50,9,44,42,motivating
+96,Welch MacKeig,52,54,61,95,open architecture
+97,Miller Maylin,85,6,95,82,background
+98,Pen Haws,86,48,62,22,Up-sized
+99,Staffard Gerbel,25,88,83,21,client-driven
+100,Justis Gull,20,46,12,62,Multi-lateral

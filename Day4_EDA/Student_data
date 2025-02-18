@@ -1,0 +1,429 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "e827158f-59f2-45ae-854e-8b5f73d5554c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "   Student_id                Name  Match  Science  English  Total  \\\n",
+      "0           1     Marlow Proudler     56       96       76     40   \n",
+      "1           2         Kinny Heads     79       20       30     14   \n",
+      "2           3  Shandie Waterstone      0       96       72     49   \n",
+      "3           4     Kippie Bouchier     95        2       40      2   \n",
+      "4           5      Rhodie Dosdell     98       62       59     64   \n",
+      "\n",
+      "           Grade  \n",
+      "0       tangible  \n",
+      "1    Right-sized  \n",
+      "2       tangible  \n",
+      "3    methodology  \n",
+      "4  system-worthy  \n"
+     ]
+    }
+   ],
+   "source": [
+    "import pandas as pd\n",
+    "df=pd.read_csv('marks_data.csv')\n",
+    "print(df.head())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "678be366-dcac-46ff-90a6-5aad47700d08",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Name</th>\n",
+       "      <th>Match</th>\n",
+       "      <th>Science</th>\n",
+       "      <th>English</th>\n",
+       "      <th>Total</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>Marlow Proudler</td>\n",
+       "      <td>56</td>\n",
+       "      <td>96</td>\n",
+       "      <td>76</td>\n",
+       "      <td>40</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>Kinny Heads</td>\n",
+       "      <td>79</td>\n",
+       "      <td>20</td>\n",
+       "      <td>30</td>\n",
+       "      <td>14</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>Shandie Waterstone</td>\n",
+       "      <td>0</td>\n",
+       "      <td>96</td>\n",
+       "      <td>72</td>\n",
+       "      <td>49</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>Kippie Bouchier</td>\n",
+       "      <td>95</td>\n",
+       "      <td>2</td>\n",
+       "      <td>40</td>\n",
+       "      <td>2</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>Rhodie Dosdell</td>\n",
+       "      <td>98</td>\n",
+       "      <td>62</td>\n",
+       "      <td>59</td>\n",
+       "      <td>64</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "                 Name  Match  Science  English  Total\n",
+       "0     Marlow Proudler     56       96       76     40\n",
+       "1         Kinny Heads     79       20       30     14\n",
+       "2  Shandie Waterstone      0       96       72     49\n",
+       "3     Kippie Bouchier     95        2       40      2\n",
+       "4      Rhodie Dosdell     98       62       59     64"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df['total']=df[['Match','Science','English']].sum(axis=1)\n",
+    "df[['Name','Match','Science','English','Total']].head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "e3a63f4d-3601-48eb-9346-bf98525a25e3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def assign_grades(total):\n",
+    "    if total >= 250:\n",
+    "        return 'A'\n",
+    "    elif total >= 200:\n",
+    "        return 'B'\n",
+    "    elif total >=150:\n",
+    "        return 'C'\n",
+    "    else:\n",
+    "        return 'D'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "47589644-ac59-4d63-91fd-22fddd36be62",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                  Name  Total Grade\n",
+      "0      Marlow Proudler     40     D\n",
+      "1          Kinny Heads     14     D\n",
+      "2   Shandie Waterstone     49     D\n",
+      "3      Kippie Bouchier      2     D\n",
+      "4       Rhodie Dosdell     64     D\n",
+      "..                 ...    ...   ...\n",
+      "95       Welch MacKeig     95     D\n",
+      "96       Miller Maylin     82     D\n",
+      "97            Pen Haws     22     D\n",
+      "98     Staffard Gerbel     21     D\n",
+      "99         Justis Gull     62     D\n",
+      "\n",
+      "[100 rows x 3 columns]\n"
+     ]
+    }
+   ],
+   "source": [
+    "df['Grade']=df['Total'].apply(assign_grades)\n",
+    "print(df[[\"Name\",\"Total\",\"Grade\"]])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "be2f03be-8702-4c89-ad9a-78baefd2824a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Name</th>\n",
+       "      <th>Total</th>\n",
+       "      <th>Grade</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>95</th>\n",
+       "      <td>Welch MacKeig</td>\n",
+       "      <td>95</td>\n",
+       "      <td>D</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>96</th>\n",
+       "      <td>Miller Maylin</td>\n",
+       "      <td>82</td>\n",
+       "      <td>D</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>97</th>\n",
+       "      <td>Pen Haws</td>\n",
+       "      <td>22</td>\n",
+       "      <td>D</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>98</th>\n",
+       "      <td>Staffard Gerbel</td>\n",
+       "      <td>21</td>\n",
+       "      <td>D</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>99</th>\n",
+       "      <td>Justis Gull</td>\n",
+       "      <td>62</td>\n",
+       "      <td>D</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "               Name  Total Grade\n",
+       "95    Welch MacKeig     95     D\n",
+       "96    Miller Maylin     82     D\n",
+       "97         Pen Haws     22     D\n",
+       "98  Staffard Gerbel     21     D\n",
+       "99      Justis Gull     62     D"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df[[\"Name\",\"Total\",\"Grade\"]].tail()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "4f460128-469d-41c1-82cb-68928980b7ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Empty DataFrame\n",
+      "Columns: [Student_id, Name, Match, Science, English, Total, Grade, total]\n",
+      "Index: []\n"
+     ]
+    }
+   ],
+   "source": [
+    "grade_a_students=df[df['Grade']=='A']\n",
+    "print(grade_a_students)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "9b759f70-5d31-4a11-b876-12af3437ad45",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "    Student_id                Name  Match  Science  English  Total Grade  \\\n",
+      "0            1     Marlow Proudler     56       96       76     40     D   \n",
+      "1            2         Kinny Heads     79       20       30     14     D   \n",
+      "2            3  Shandie Waterstone      0       96       72     49     D   \n",
+      "3            4     Kippie Bouchier     95        2       40      2     D   \n",
+      "4            5      Rhodie Dosdell     98       62       59     64     D   \n",
+      "..         ...                 ...    ...      ...      ...    ...   ...   \n",
+      "95          96       Welch MacKeig     52       54       61     95     D   \n",
+      "96          97       Miller Maylin     85        6       95     82     D   \n",
+      "97          98            Pen Haws     86       48       62     22     D   \n",
+      "98          99     Staffard Gerbel     25       88       83     21     D   \n",
+      "99         100         Justis Gull     20       46       12     62     D   \n",
+      "\n",
+      "    total  \n",
+      "0     228  \n",
+      "1     129  \n",
+      "2     168  \n",
+      "3     137  \n",
+      "4     219  \n",
+      "..    ...  \n",
+      "95    167  \n",
+      "96    186  \n",
+      "97    196  \n",
+      "98    196  \n",
+      "99     78  \n",
+      "\n",
+      "[100 rows x 8 columns]\n"
+     ]
+    }
+   ],
+   "source": [
+    "grade_d_students=df[df['Grade']=='D']\n",
+    "print(grade_d_students)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "fe5c99af-476f-45b5-9479-8ed644af6ef3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Total no of students failed: 100\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Total no of students failed:',len(df[df['Grade']=='D']))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "dcf64559-64cc-4fca-b806-233199e0df46",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Total no of students failed: 0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Total no of students failed:',len(df[df['Grade']=='A']))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "fad1042f-42ed-4833-8bba-5b69b0e0464a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "100\n"
+     ]
+    }
+   ],
+   "source": [
+    "math_max=max(df['Match'])\n",
+    "print(math_max)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "530f36a7-2595-459c-8cf8-3db3981261c9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.to_csv(\"data_new.csv\",index=False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "41991ce6-dc71-4bee-8b3a-0d4bda47f185",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

@@ -1,0 +1,455 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "2ab01e3c-757d-4707-be11-d6b5399c9bd4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2.2.3\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "print(np.__version__)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "17170963-b77a-499d-a379-174361bfdedf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10 20 30 40 50]\n",
+      "Type: <class 'numpy.ndarray'>\n",
+      "Shape (5,)\n"
+     ]
+    }
+   ],
+   "source": [
+    "list = [10, 20, 30, 40, 50]\n",
+    "arr = np.array(list)\n",
+    "print(arr)\n",
+    "print('Type:', type(arr))\n",
+    "print('Shape',arr.shape)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "c4d7b276-f015-44ff-a0b2-ae87b9c6f3f2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1 2 3]\n",
+      " [4 5 6]]\n",
+      "(2, 3)\n",
+      "6\n",
+      "[1 2 3]\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "arr1=np.array([[1,2,3],[4,5,6]])\n",
+    "print(arr1)\n",
+    "print(arr1.shape)\n",
+    "print(arr1.size)\n",
+    "print(arr1[0])\n",
+    "print(arr1[0][2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "84fff44d-6a7a-49b9-a30d-aebfea820437",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[0. 0. 0.]\n",
+      " [0. 0. 0.]]\n",
+      "0.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "arr1=np.zeros([2,3])\n",
+    "print(arr1)\n",
+    "print(arr1[0][1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "d7f7f2d9-834c-432d-9864-631c3fe7c1ce",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1. 1. 1.]\n",
+      " [1. 1. 1.]\n",
+      " [1. 1. 1.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "arr2=np.ones((3,3))\n",
+    "print(arr2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "e67d4825-9e80-447a-86c6-d2ff84bdb6f3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 3  9 15]\n",
+      "[ 1 16 49]\n",
+      "[ 2 20 56]\n"
+     ]
+    }
+   ],
+   "source": [
+    "arr3=np.arange(1,10,3)\n",
+    "arr4=np.arange(2,10,3)\n",
+    "print(arr3+arr4)\n",
+    "print(arr3**2)\n",
+    "print(arr3*arr4)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "ac04067f-e2d2-4687-8b4c-066ecc17fab8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1 4 7]\n",
+      " [2 5 8]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "sample=np.array([np.arange(1,10,3),np.arange(2,10,3)])\n",
+    "print(sample)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "feb54785-c94a-43f9-b7f1-a769abf8823c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Total Spend: [ 450  950  450 1650  230]\n",
+      "Average Spend: [150.         316.66666667 150.         550.          76.66666667]\n",
+      "550.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "purchases=np.array([\n",
+    "    [200,150,100],\n",
+    "    [300,250,400],\n",
+    "    [100,200,150],\n",
+    "    [500,600,550],\n",
+    "    [50,80,100]\n",
+    "])\n",
+    "total_spend=purchases.sum(axis=1)\n",
+    "\n",
+    "average_spend=purchases.mean(axis=1)\n",
+    "\n",
+    "print(\"Total Spend:\",total_spend)\n",
+    "print(\"Average Spend:\",average_spend)\n",
+    "print(max(average_spend))\n",
+    "\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "cf82f9e2-9289-48a5-80f5-5dbe5e8fec62",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Solution(x,y): [2.2 1.2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "A=np.array([[2,3],[4,1]])\n",
+    "B=np.array([8,10])\n",
+    "\n",
+    "solution=np.linalg.solve(A,B)\n",
+    "print(\"Solution(x,y):\",solution)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "6f6b9ecd-5d49-4874-9990-4d091da90740",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "29254\n"
+     ]
+    }
+   ],
+   "source": [
+    "sales=np.array([1000,2000,1800,1500,1900,2000,1750,6476,8484,2344])\n",
+    "total_sales=sum(sales)\n",
+    "print(total_sales)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "f8b6cd98-07b6-494d-a365-6e6ed975fe4f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2925.4\n"
+     ]
+    }
+   ],
+   "source": [
+    "average_sales=np.mean(sales)\n",
+    "print(average_sales)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "9919c508-88f8-4ceb-ac50-54c114c7e585",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8484\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(max(sales))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "34e460bc-786f-4049-9174-116c6e238bf4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1000\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(min(sales))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "45d01dae-94fa-4695-bbc6-d433870695a8",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1000 2000 1800 1500 1900 2000 1750 6476 8484 2344]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(sales)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "c479deed-2d90-40bd-bbab-5ea7ae7210de",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2925.4\n"
+     ]
+    }
+   ],
+   "source": [
+    "avg = (sum(sales) / len(sales))\n",
+    "print(avg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "50b0c874-c7fa-4059-b400-a57afff7c070",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Average Sales: 2925.4\n",
+      "Number of days with sales above average: 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Count the number of days with sales above the average\n",
+    "days_above_average = np.sum(sales > avg)\n",
+    " \n",
+    "print(f\"Average Sales: {avg}\")\n",
+    "print(f\"Number of days with sales above average: {days_above_average}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "3c52185e-f7e9-460e-b866-5d63d277f12d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1100.0\n",
+      "2200.0\n",
+      "1980.0000000000002\n",
+      "1650.0000000000002\n",
+      "2090.0\n",
+      "2200.0\n",
+      "1925.0000000000002\n",
+      "7123.6\n",
+      "9332.400000000001\n",
+      "2578.4\n"
+     ]
+    }
+   ],
+   "source": [
+    "for num in sales:\n",
+    "    increase = 1.1 * num\n",
+    " \n",
+    "    print(increase)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "ea2a5a68-6286-4c27-a3ca-e8d53e2602b3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1000 1500 1750 1800 1900 2000 2000 2344 6476 8484]\n"
+     ]
+    }
+   ],
+   "source": [
+    "sales.sort()\n",
+    "print(sales)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "f3003023-1f6b-499d-9c3e-f4ba36cbedf0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1100.  1650.  1925.  1980.  2090.  2200.  2200.  2578.4 7123.6 9332.4]\n",
+      "[1000 1500 1750 1800 1900 2000 2000 2344 6476 8484]\n"
+     ]
+    }
+   ],
+   "source": [
+    "updated=sales*1.1\n",
+    "print(updated)\n",
+    "print(sales)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b38e6c8a-9d28-4801-9c53-a2fa8328d8aa",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
