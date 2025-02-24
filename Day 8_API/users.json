@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Hanvik",
+      "email": "ac@gmail.com",
+      "address": "mysuru",
+      "website": "www.haha.com"
+    },
+    {
+      "id": "3",
+      "name": "nidhii",
+      "email": "nidhi@gmail.com",
+      "address": "paris"
+    },
+    {
+      "id": "1740053769392",
+      "name": "Lavanya S",
+      "email": "lavanyanidhi@gmail.com",
+      "address": "Mysuru"
+    }
+  ]
+}
